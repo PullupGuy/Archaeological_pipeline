@@ -77,9 +77,10 @@ if __name__ == "__main__":
     IGNORED = None
 
     merger_groups = None
+    merger_groups = {} if merger_groups is None else merger_groups
 
     MERGER = {
-        animal : group
+        animal: group
         for group, animals in merger_groups.items()
         for animal in animals
     }
@@ -326,3 +327,4 @@ if __name__ == "__main__":
     else:
         print("Invalid input!")
         sys.exit(-1)
+
