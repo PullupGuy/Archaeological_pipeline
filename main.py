@@ -76,8 +76,7 @@ if __name__ == "__main__":
 
     IGNORED = None
 
-    merger_groups = None
-    merger_groups = {} if merger_groups is None else merger_groups
+    merger_groups = {}
 
     MERGER = {
         animal: group
