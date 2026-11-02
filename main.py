@@ -82,7 +82,7 @@ if __name__ == "__main__":
         animal: group
         for group, animals in merger_groups.items()
         for animal in animals
-    }
+    } if merger_groups else None
 
     taxonomy_groups = {
         "carnivores": ["dog", "cat"],
